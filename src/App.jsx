@@ -1,0 +1,45 @@
+import React from 'react'
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Page from './Components/Page'
+
+import MagicBox from './Components/MagicBox'
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createRoutesFromElements,
+  Route
+} from "react-router-dom";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route path= "/" element={<Page />}/>
+      <Route path= "/magicbox" element={<MagicBox />}/>
+    </>
+    
+));
+
+function App() {
+  return (
+    <>
+    <RouterProvider router={router}/>
+    </>
+  )
+}
+
+export default App
+
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Header/>
+//       {/* <Featured/>
+//       <Footer/>
+//       <MagicBox/> */}
+//     </div>
+//   )
+// }
+
+// export default App
