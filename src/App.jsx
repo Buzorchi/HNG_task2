@@ -2,7 +2,7 @@ import React from 'react'
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Page from './Components/Page'
 
-import MagicBox from './Components/MagicBox'
+import MovieDetails from './Components/MovieDetails'
 
 import {
   createBrowserRouter,
@@ -15,7 +15,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path= "/" element={<Page />}/>
-      <Route path= "/magicbox" element={<MagicBox />}/>
+      <Route path= "/moviedetails" element={<MovieDetails />}/>
     </>
     
 ));

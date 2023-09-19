@@ -125,7 +125,7 @@ const Featured = () => {
                     </a>
                 </div>
             </div>
-            <div className="grid grid-cols-12 md:grid-cols-3 gap-10  mt-10 m-auto">
+            <div className="grid grid-cols-12 md:grid-cols-4 gap-20  mt-10 m-auto">
                 {movies.length > 0 ? (
                     movies.map((movie) => (
                         <div key={movie.id} className="relative">
